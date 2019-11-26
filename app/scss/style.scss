@@ -1,0 +1,64 @@
+@import '_vars';
+@import '_global';
+
+.header__inner-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+}
+
+.header__top{
+
+ 
+    &-text{
+        margin-left: auto;
+        margin-right: 25px;
+
+        span{
+            color: $red;
+        }
+    }
+
+    &-btn{
+        color: #fff;
+        text-align: center;
+        padding: 4px;
+        width: 72px;
+        border-radius: 4px;
+        font-size: 12px;
+        &-login{
+            background-color: $green;
+        }
+
+        &-register{
+            margin-right: 7px;
+            background-color: $red;
+        }
+    }
+}
+
+.header__menu{
+    background-color: $blue;
+}
+
+.menu{
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-list{
+    li{
+        display: inline-block;
+        & + li{
+            margin-left: 30px;
+        }
+    a{
+        color: #fff;
+        font-family: 'Roboro Medium',sans-serif;
+        font-size: 14px;
+    }
+
+    }
+}
