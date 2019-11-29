@@ -370,4 +370,32 @@ button.mixitup-control-active{
     }
 }
 
+.tutorial{
+    padding: 75px 0px 125px;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+.tutorial__item{
+    max-width: 370px;
+    width: 100%;
+    &-img{
+        min-height: 268px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    &-name{
+        @include f700;
+        padding: 40px 10px;
+        background-color: #f8f8f8;
+        font-size: 24px;
+        text-align: center;
+        color: #000;
+    }
+}
+
   
