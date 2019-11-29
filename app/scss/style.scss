@@ -334,4 +334,40 @@ button.mixitup-control-active{
     }
 }
 
+.author{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__box{
+        max-width: 655px;
+        min-height: 215px;
+        width: 100%;
+        background-color: $green;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: #fff;
+        &-text{
+            max-width: 266px;
+            font-size: 30px;
+            line-height: 36px;
+            span{
+            @include f700;
+            }
+        }
+
+        a{
+            padding: 13px 40px;
+            font-size: 18px;
+            line-height: 36px;
+            background-color: #fff;
+            color: $blue;
+        }
+    }
+}
+
   
