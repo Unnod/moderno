@@ -4,3 +4,13 @@ $green: #8bc34a;
 $blue: #263238;
 $placeholder: #90a4ae;
 $bg-grey: #f4f6f5;
+
+@mixin f700{
+    font-family: 'Roboto',sans-serif;
+    font-weight: 700;
+}
+
+@mixin f500{
+    font-family: 'Roboto',sans-serif;
+    font-weight: 500;
+}
