@@ -56,3 +56,46 @@ li{
     color: $blue;
     margin-bottom: 30px;
 }
+
+.stars{
+    display: inline-block;
+    margin-right: 13px;
+    .jq-ry-normal-group{
+        display: none;
+    }   
+    span{
+        color: $blue;
+        font-size: 12px;
+    }
+}
+
+.slick-slide{
+    display: inline-block;
+}
+
+.slick-dots{
+    margin-top: 125px;
+    text-align: center;
+    li{
+        margin-left: 3px;
+        margin-right: 3px;
+        display: inline-block;
+        button{
+            border: none;
+            font-size: 0;
+            border-radius: 50%;
+            background-color: rgb(232, 232, 232);
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+            outline: none;
+        }
+    }
+    .slick-active{
+        button{
+            background-color: $green;
+        }
+        
+    }
+}
+
