@@ -8,6 +8,10 @@ html{
     box-sizing: inherit;
 }
 
+html,
+body {
+	height: 100%;
+}
 body{
     font-family: 'Roboto Regular',sans-serif;
     font-size: 15px;
@@ -31,6 +35,18 @@ li{
     padding: 0;
 }
 
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.content {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+
 .container{
     margin: 0 auto;
     max-width: 1200px;
@@ -48,6 +64,10 @@ li{
     }
 }
 
+.page-content{
+    background-color: #f4f6f5;
+}
+
 .title{
     text-align: center;
     font-size: 36px;
@@ -60,9 +80,6 @@ li{
 .stars{
     display: inline-block;
     margin-right: 13px;
-    .jq-ry-normal-group{
-        display: none;
-    }   
     span{
         color: $blue;
         font-size: 12px;
