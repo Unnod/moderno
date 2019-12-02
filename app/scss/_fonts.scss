@@ -27,6 +27,9 @@
   .icon-search:before {
     content: "\f002";
   }
+  .icon-envelope-o:before {
+    content: "\f003";
+  }
   .icon-th-large:before {
     content: "\f009";
   }
@@ -41,6 +44,9 @@
   }
   .icon-phone:before {
     content: "\f095";
+  }
+  .icon-bell-o:before {
+    content: "\f0a2";
   }
   .icon-sort:before {
     content: "\f0dc";
@@ -57,10 +63,18 @@
   .icon-angle-right:before {
     content: "\f105";
   }
+  .icon-angle-down:before {
+    content: "\f107";
+  }
+  .icon-mail-reply:before {
+    content: "\f112";
+  }
+  .icon-reply:before {
+    content: "\f112";
+  }
   .icon-location-arrow:before {
     content: "\f124";
   }
   .icon-sort-amount-desc:before {
     content: "\f161";
   }
-  

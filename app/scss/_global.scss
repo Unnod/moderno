@@ -112,3 +112,14 @@ li{
     }
 }
 
+.angle{
+    position: relative;
+}
+.angle::before{
+    content: '\f105';
+    position: absolute;
+    color: $green;
+    left: 0;
+    font-family: 'icomoon';
+    font-size: 14px;
+}
