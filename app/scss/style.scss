@@ -2,6 +2,9 @@
 @import '_global';
 @import '_fonts';
 
+header{
+    background-color: #fff;
+}
 .header__inner-top{
     display: flex;
     justify-content: space-between;
@@ -10,8 +13,6 @@
 }
 
 .header__top{
-
- 
     &-text{
         margin-left: auto;
         margin-right: 25px;
@@ -20,8 +21,15 @@
             color: $red;
         }
     }
-
-    &-btn{
+    .header__top-btnbox{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &-link{
+        & + &{
+            margin-left: 8px;
+        }
         color: #fff;
         text-align: center;
         padding: 4px;
@@ -33,7 +41,7 @@
         }
 
         &-register{
-            margin-right: 7px;
+           
             background-color: $red;
         }
     }
@@ -76,6 +84,15 @@
         }
     }
 }
+
+.header__top-login--on{
+    display: block;
+}
+
+.header__top-login--off{
+    display: none;
+}
+
 
 .header__top-circles{
     display: flex;
@@ -142,6 +159,7 @@
 }
 
 .user__menu{
+    z-index: 1;
     height: 0;
     overflow: hidden;
     border: 0px solid #d5d5d5;
@@ -193,6 +211,7 @@
     overflow: hidden;
     top: 65px;
     background-color: #fff;
+    z-index: 1;
 }
 
 .circle__item{
@@ -291,11 +310,28 @@
         }
     }
 }
-
+.header__box{
+    align-items: center;
+    display: flex;
+}
+.header__top-btn{
+    display: none;
+}
 
 
 .header__menu{
     background-color: $blue;
+    text-align: center;
+    &-btn{
+        cursor: pointer;
+        div{
+            width: 30px;
+            height: 3px;
+            background-color: #fff;
+            margin-bottom: 4px;
+        }
+        display: none;
+    }
 }
 
 .menu{
@@ -783,6 +819,7 @@ button.mixitup-control-active{
 
 .footer__col-form{
     position: relative;
+    display: inline-block;
     input{
         display: block;
         background-color: #2f3c43;
@@ -1139,3 +1176,5 @@ button.mixitup-control-active{
 }
 
   
+
+@import '_media';

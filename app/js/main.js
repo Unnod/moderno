@@ -25,6 +25,13 @@ $(function () {
         prefix: "$"
     });
 
+    $('.header__menu-btn').on('click', function(){
+        $('.menu-list').slideToggle();
+    });
+
+    $('.header__top-btn').on('click', function(){
+        $('.header__box').toggleClass('active');
+    });
 
     var mixer = mixitup('.products__inner-box');
 
