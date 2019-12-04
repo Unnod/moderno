@@ -7,6 +7,12 @@ $bg-grey: #f4f6f5;
 $yellow: #fcb322;
 $tomato: #ef6c00;
 
+
+@mixin f300{
+    font-family: 'Roboto',sans-serif;
+    font-weight: 300;
+}
+
 @mixin f700{
     font-family: 'Roboto',sans-serif;
     font-weight: 700;
