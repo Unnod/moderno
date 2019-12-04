@@ -22,6 +22,11 @@ body{
     overflow-x: hidden;
 }
 
+.wrapper{
+    overflow-x: hidden;
+    position: relative;
+}
+
 a{
     display: inline-block;
     text-decoration: none;
