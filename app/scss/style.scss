@@ -1595,14 +1595,6 @@ button.mixitup-control-active{
 }
 
 .page-404{
-    &__head{
-        color: #444444;
-        font-size: 24px;
-        @include f500;
-        background-color: #fff;
-        padding: 22px 30px;
-        border: 1px solid #dcdcdc;
-    }
     &__inner{
         background-color: $green;
         text-align: center;
@@ -1655,6 +1647,36 @@ button.mixitup-control-active{
     }
 }
 
+.page-404__head,
+.about__head{
+    color: #444444;
+    font-size: 24px;
+    @include f500;
+    background-color: #fff;
+    padding: 22px 30px;
+    border: 1px solid #dcdcdc;
+}
+
+.about{
+    &__inner{
+        background-color: #fff;
+        padding: 40px 65px 40px 50px;
+        margin-bottom: 100px;
+        border: 1px solid #dcdcdc;
+        border-top: none;
+    }
+    &__text-box{
+        h3{
+            font-size: 20px;
+            @include f700;
+            color: #444444;
+        }
+        p{
+            font-size: 15px;
+            color: #707070;
+        }
+    }
+}
 
 
 
