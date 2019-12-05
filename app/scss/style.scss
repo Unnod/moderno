@@ -1594,6 +1594,67 @@ button.mixitup-control-active{
     }
 }
 
+.page-404{
+    &__head{
+        color: #444444;
+        font-size: 24px;
+        @include f500;
+        background-color: #fff;
+        padding: 22px 30px;
+        border: 1px solid #dcdcdc;
+    }
+    &__inner{
+        background-color: $green;
+        text-align: center;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        color: #fff;
+        margin-bottom: 100px;
+    }
+    &__title{
+        font-size: 300px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 800;
+        position: relative;
+        line-height: 300px;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 152px;
+            height: 292px;
+            background-image: url(../images/404/img.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            right: 150px;
+        }
+    }
+    &__caption{
+        font-size: 30px;
+        @include f300;
+        margin-top: 20px;
+    }
+    &__text{
+        font-size: 18px;
+        @include f500;
+        width: 540px;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    &__link{
+        margin-top: 30px;
+        a{
+           font-size: 14px;
+            color: #fff;
+            @include f700;
+            border: 1px solid #fff;
+            text-transform: uppercase;
+            padding: 19px 30px 12px;
+        }
+        
+    }
+}
+
 
 
 
