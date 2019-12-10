@@ -1830,6 +1830,7 @@ button.mixitup-control-active{
 .page-box{
     width: 100%;    
     border:1px solid #dedede;
+    background-color: #fff;
     &__title{
         font-size: 24px;
         color: $blue;
@@ -1884,6 +1885,163 @@ button.mixitup-control-active{
     
 }
 
-  
+.profile{
+    &__inner{
+        display: flex;
+    }
+    &__aside{
+        margin-right: 30px;
+        .aside__author-link{
+            margin-bottom: 25px;
+            padding-left: 20px;
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                width: 9px;
+                height: 9px;
+                border-radius: 50%;
+                left: 6px;
+                top: 9px;
+            }
+        }
+        .online--on{
+            &::before{
+                background-color: $green;
+            }
+        }
+        .online--off{
+            &::before{
+                background-color: $red;
+            }
+        }
+    }
+    .footer__col-links.profile-links{
+        margin-top: 0;
+        margin-bottom: 25px;
+    }
+    &__btn{
+        margin-bottom: 30px;
+        a{
+            @include f500;
+            font-size: 16px;
+            color: #fff;
+            text-align: center;
+            display: block;
+            padding: 15px 10px;
+            background-color: red;
+            margin-bottom: 15px;
+            box-shadow: 0px 1px 2px 0px rgba(69, 90, 100, 0.75);
+        }
+        .profile__link-send{
+            background-color: #546e7a;
+            position: relative;
+            &::before{
+                font-family: 'icomoon';
+                content: "\f003";
+                position: absolute;
+                color: #fff;
+                left: 55px;
+                top: 13px;
+            }
+        }
+        .profile__link-fol{
+            background-color: $green;
+        }
+    }
+    &__content{
+        width: 100%;
+    }
+    &__banner{
+        border: 1px solid #dedede;
+        margin-bottom: 51px;
+        padding: 18px;
+        background-color: #fff;
+        &-img{
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 330px;
+        }
+    }
+    &__info{
+        display: flex;
+        border: 1px solid #dedede;
+        background-color: #fff;
+        &-item{
+            padding: 20px 10px 15px;    
+            text-align: center;
+            width: 25%;
+            & + .profile__info-item{
+                border-left: 1px solid #dedede;
+            }
+
+        }
+    }
+    &__title{
+        font-size: 14px;
+        color: $blue;
+        @include f500;
+    }
+    &__text{
+        font-size: 14px;
+        color: #707070;
+        .stars{
+            margin-right: 0;
+        }
+    }
+    .tab__title{
+        font-size: 20px;
+        color: $blue;
+        @include f700;
+        margin-bottom: 25px;
+    }
+    p{
+        margin-bottom: 25px;
+        color: #707070;
+    }
+    .product__tabs .tab-item{
+        padding: 40px 50px 50px 40px;
+    }
+    .tab__text{
+        margin-bottom: 13px;
+        display: flex;
+    }
+    .tab__name,
+    .tab__num{
+        font-size: 16px;
+        color: $blue;
+        @include f700;
+    }
+    .tab__num{
+        margin-left: auto;
+    }
+    .tab__line{
+        margin-bottom: 15px;
+        height: 15px;
+        background-color: #f4f4f4;
+        border-radius: 4px;
+        width: 100%;
+        span{
+            display: block;
+            background-repeat: repeat;
+            height: 15px;
+            border-radius: 4px;
+        }
+    }
+    .tabs{
+        span{
+            font-weight: 500;
+            color: #707070;
+            font-family: 'Roboto' !important;
+            position: relative;
+            &::before{
+                font-family: 'icomoon';
+                left: 25px !important;
+                position: absolute;
+            }
+        }
+    }
+}
 
 @import '_media';
