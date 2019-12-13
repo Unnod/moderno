@@ -1,0 +1,138 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+html,
+body {
+	height: 100%;
+}
+body{
+    font-family: 'Roboto Regular',sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    color: $grey;
+    margin: 0;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+
+.wrapper{
+    overflow-x: hidden;
+    position: relative;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: $grey;
+}
+
+ul,
+li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.content {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0px 15px;
+}
+
+.container-fluid{
+    margin: 0 auto;
+    padding: 0px 30px;
+}
+
+@media (max-width: 720px){
+    .container-fluid{
+        padding: 0px 15px;;
+    }
+}
+
+.page-content{
+    background-color: #f4f6f5;
+}
+
+.title{
+    text-align: center;
+    font-size: 36px;
+    line-height: 60px;
+    font-weight: 700;
+    color: $blue;
+    margin-bottom: 30px;
+}
+
+.stars{
+    display: inline-block;
+    margin-right: 13px;
+    span{
+        color: $blue;
+        font-size: 12px;
+    }
+}
+
+.slick-dots{
+    margin-top: 125px;
+    text-align: center;
+    li{
+        margin-left: 3px;
+        margin-right: 3px;
+        display: inline-block;
+        button{
+            border: none;
+            font-size: 0;
+            border-radius: 50%;
+            background-color: rgb(232, 232, 232);
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+            outline: none;
+        }
+    }
+    .slick-active{
+        button{
+            background-color: $green;
+        }
+        
+    }
+}
+
+.angle{
+    position: relative;
+}
+.angle::before{
+    content: '\f105';
+    position: absolute;
+    color: $green;
+    left: 0;
+    font-family: 'icomoon';
+    font-size: 14px;
+}
+
+#modal{
+    display: none;
+}
+.breadcrumbs__inner{
+    width: 10000px;
+    overflow-x: hidden;
+}
